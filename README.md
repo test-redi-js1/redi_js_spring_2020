@@ -1,6 +1,6 @@
 ### Demo project for spring 2020 JS semester with Redi Munich school
 
-####Lecture 1:
+#### Lecture 1:
 index.html was created and added to git
 
 #### Lecture 2:
