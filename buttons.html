@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Redi JS Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/redi.png">
+</head>
+
+<body>
+<div class="header-bar">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" onclick="showAlert(this)">Projects</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="main-area">
+    <div class="home-content-block">
+        <p>How are you?</p>
+        <button id="awesomeButton">Awesome 🤩</button>
+        <button id="goodButton">Good 👍</button>
+        <button id="badButton">Bad 👎</button>
+        <p id="answer"></p>
+    </div>
+</div>
+
+<div class="footer-bar">
+    <span> Demo project for spring 2020 semester JS class at ReDI Munich </span>
+</div>
+
+<style>
+    #answer {
+        color: black;
+        font-size: 15px;
+    }
+    #goodButton, #badButton, #awesomeButton {
+        margin: 0.5em;
+        padding: 0.5em 2em;
+        font-size: 15pt;
+        min-width: 200px;
+        cursor: pointer;
+    }
+
+    #awesomeButton {
+        background-color: lightcoral;
+    }
+
+    #goodButton {
+        background-color: yellowgreen;
+    }
+
+    #badButton {
+        background-color: lightsteelblue;
+    }
+</style>
+
+<script src="js/main.js"></script>
+<script>
+    let awesomeButtonCmp = document.getElementById("awesomeButton");
+    let goodButtonCmp = document.getElementById("goodButton");
+    let badButtonCmp = document.getElementById("badButton");
+    let answerCmp = document.getElementById("answer");
+
+    function awesomeButtonClick(event) {
+        answerCmp.textContent = "That's amazing 😍";
+    }
+
+    function goodButtonClick(event) {
+        answerCmp.textContent = "That's great 😊";
+    }
+
+    function badButtonClick(event) {
+        answerCmp.textContent = "Oh that's sad 😥";
+    }
+
+    awesomeButtonCmp.addEventListener("click", awesomeButtonClick);
+    goodButtonCmp.addEventListener("click", goodButtonClick);
+    badButtonCmp.addEventListener("click", badButtonClick);
+</script>
+
+</body>
+</html>
