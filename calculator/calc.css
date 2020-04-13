@@ -1,0 +1,94 @@
+:root {
+    --blue: #BACBFF;
+    --tan: #F7BB83;
+    --green: #8CE83C;
+    --black: #3F3F3F;
+}
+
+.mainArea {
+    background: var(--green);
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template: 100vh / auto 765px auto;
+    font-size: 60px;
+    color: var(--black);
+    line-height: 1;
+    overflow: hidden;
+}
+
+.tiltedBody {
+    grid-column: 2 / span 1;
+    background: var(--tan);
+    height: 150vh;
+    transform: rotate(-4deg) translateY(-25vh);
+}
+
+.tiltedBody__inner {
+    height: 150vh;
+    transform: rotate(4deg) translateY(25vh);
+}
+
+.app {
+    display: grid;
+    grid-template:
+        "addSign list" auto
+        "sum sum" auto
+        "input input"
+        auto / auto max-content;
+    height: 100vh;
+    justify-content: center;
+}
+
+.numberList {
+    grid-area: list;
+    list-style: none;
+    border-bottom: 2px solid var(--black);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0;
+    align-self: flex-end;
+    padding-left: 0.5em;
+}
+
+.sumBox {
+    grid-area: sum;
+    text-align: right;
+}
+
+.plusBox {
+    grid-area: addSign;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.plusBox__inner {
+    border-bottom: 2px solid var(--black);
+    display: block;
+    margin: 0;
+}
+
+.inputTray {
+    grid-area: input;
+}
+
+.btn {
+    background-color: var(--blue);
+    color: var(--black);
+    padding: .20em .35em;
+    border-radius: 5px;
+    border: 0;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(2deg);
+}
+
+.btn__inner {
+    margin: 0;
+    transform: rotate(-2deg);
+}
