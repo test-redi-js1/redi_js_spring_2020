@@ -1,4 +1,5 @@
 ### Demo project for spring 2020 JS semester with Redi Munich school
+https://test-redi-js1.github.io/redi_js_spring_2020/
 
 #### Lecture 1:
 index.html was created and added to git
