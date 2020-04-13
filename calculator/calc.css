@@ -47,7 +47,7 @@
     border-bottom: 2px solid var(--black);
     margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: right;
     padding: 0;
     align-self: flex-end;
