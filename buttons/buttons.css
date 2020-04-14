@@ -5,7 +5,7 @@
 }
 
 .btns {
-    background-color: #f69c7a;
+    background-color: var(--pink);
     padding: 3em;
     transform: rotate(4deg);
     font-size: 20px;
