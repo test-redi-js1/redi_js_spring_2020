@@ -1,12 +1,9 @@
-:root {
-    --blue: #BACBFF;
-    --tan: #F7BB83;
-    --green: #8CE83C;
-    --black: #3F3F3F;
+.mainArea {
+    --lightBlue: #BACBFF;
 }
 
 .mainArea {
-    background: var(--green);
+    background: var(--blue);
     overflow: hidden;
     height: 100vh;
     margin: 0;
@@ -21,7 +18,7 @@
 
 .tiltedBody {
     grid-column: 2 / span 1;
-    background: var(--tan);
+    background: var(--pink);
     height: 150vh;
     transform: rotate(-4deg) translateY(-25vh);
 }
@@ -81,14 +78,14 @@
     border-radius: 5px;
     font-size: 40px;
     padding: .20em .35em;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--lightBlue);
     background: rgba(255, 255, 255, 0.44);
     max-width: 25%;
     margin-right: 1em;
 }
 
 .btn {
-    background-color: var(--blue);
+    background-color: var(--lightBlue);
     color: var(--black);
     padding: .20em .35em;
     border-radius: 5px;

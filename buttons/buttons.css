@@ -1,0 +1,15 @@
+.mainArea--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    background-color: #f69c7a;
+    padding: 3em;
+    transform: rotate(4deg);
+}
+
+.buttons__innner {
+    transform: rotate(-4deg);
+}

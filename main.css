@@ -1,27 +1,35 @@
+:root {
+    --blue: #5BAEC5;
+    --pink: #f69c7a;
+    --black: #3F3F3F;
+}
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
+    color: var(--black);
 }
 
 body {
     display: grid;
     grid-template:
-        "header" auto
+        "header" min-content
         "main" auto
-        "footer" auto
+        "footer" min-content
         / 100vw;
 }
 
 .headerBar {
-    grid-area: "header";
+    grid-area: header;
+    background-color: var(--blue);
 }
 
 .footerBar {
-    grid-area: "footer";
+    grid-area: footer;
     text-align: center;
     color: white;
-    background-color: #5BAEC5;
+    background-color: var(--blue);
     padding: 1em 0;
 }
 
@@ -30,7 +38,6 @@ body {
     list-style-type: none;
     padding: 1em;
     margin: 0;
-    background-color: #5BAEC5;
     display: flex;
 }
 
@@ -61,7 +68,7 @@ body {
 
 .homeBanner__wrapper {
     transform: rotate(-2deg);
-    background-color: #f69c7a;
+    background-color: var(--pink);
 }
 
 .homeBanner {
