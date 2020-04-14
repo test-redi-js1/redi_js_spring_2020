@@ -1,8 +1,7 @@
 .mainArea {
     --lightBlue: #BACBFF;
-}
 
-.mainArea {
+    font-family: 'Roboto Mono', monospace;
     background: var(--blue);
     overflow: hidden;
     height: 100vh;
