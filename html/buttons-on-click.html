@@ -11,12 +11,12 @@
 <body>
 <div class="header-bar">
     <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#about">About us</a></li>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a href="#">Final project</a></li>
         <li class="dropdown">
-            <a href="javascript:void(0)" onclick="showAlert(this)">Projects</a>
+            <a href="javascript:void(0)" onclick="showAlert(this)">Course projects</a>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
+                <a href="buttons-on-click.html">Buttons</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
             </div>
@@ -38,55 +38,6 @@
     <span> Demo project for spring 2020 semester JS class at ReDI Munich </span>
 </div>
 
-<style>
-    #answer {
-        color: black;
-        font-size: 15px;
-    }
-    #goodButton, #badButton, #awesomeButton {
-        margin: 0.5em;
-        padding: 0.5em 2em;
-        font-size: 15pt;
-        min-width: 200px;
-        cursor: pointer;
-    }
-
-    #awesomeButton {
-        background-color: lightcoral;
-    }
-
-    #goodButton {
-        background-color: yellowgreen;
-    }
-
-    #badButton {
-        background-color: lightsteelblue;
-    }
-</style>
-
 <script src="../js/main.js"></script>
-<script>
-    let awesomeButtonCmp = document.getElementById("awesomeButton");
-    let goodButtonCmp = document.getElementById("goodButton");
-    let badButtonCmp = document.getElementById("badButton");
-    let answerCmp = document.getElementById("answer");
-
-    function awesomeButtonClick(event) {
-        answerCmp.textContent = "That's amazing 😍";
-    }
-
-    function goodButtonClick(event) {
-        answerCmp.textContent = "That's great 😊";
-    }
-
-    function badButtonClick(event) {
-        answerCmp.textContent = "Oh that's sad 😥";
-    }
-
-    awesomeButtonCmp.addEventListener("click", awesomeButtonClick);
-    goodButtonCmp.addEventListener("click", goodButtonClick);
-    badButtonCmp.addEventListener("click", badButtonClick);
-</script>
-
 </body>
 </html>

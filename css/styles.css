@@ -57,7 +57,7 @@ html, body {
 }
 
 .header-bar li.dropdown {
-  min-width: 100px;
+  min-width: 140px;
   display: inline-block;
   float: right;
 }
@@ -66,7 +66,7 @@ html, body {
   display: none;
   float: right;
   position: fixed;
-  min-width: 100px;
+  min-width: 140px;
   z-index: 2;
   background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -124,4 +124,28 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+#answer {
+  color: black;
+  font-size: 15px;
+}
+#goodButton, #badButton, #awesomeButton {
+  margin: 0.5em;
+  padding: 0.5em 2em;
+  font-size: 15pt;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+#awesomeButton {
+  background-color: lightcoral;
+}
+
+#goodButton {
+  background-color: yellowgreen;
+}
+
+#badButton {
+  background-color: lightsteelblue;
 }
