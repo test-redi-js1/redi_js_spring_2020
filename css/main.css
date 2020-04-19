@@ -25,6 +25,7 @@ body {
 .headerBar {
     grid-area: header;
     background-color: var(--blue);
+    display: flex;
 }
 
 .footerBar {

@@ -20,3 +20,27 @@
     padding: 0.5em 1em;
     font-size: 20px;
 }
+
+.burger-btn {
+    align-self: center;
+    float: right;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.burger-btn:hover {
+    margin-right: 4px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.burger-btn__line {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.filler {
+    flex: 1;
+}
