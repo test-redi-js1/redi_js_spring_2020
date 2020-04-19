@@ -34,6 +34,7 @@
 }
 
 .burger-btn:hover {
+    cursor: pointer;
     margin-right: 4px;
     border: 1px solid white;
     border-radius: 25px;
