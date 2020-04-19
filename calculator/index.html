@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="icon" href="img/redi.png">
+</head>
+<body>
+<div class="headerBar">
+    <ul class="headerBar__links">
+        <li><a class="headerBar__link" href="/">Home</a></li>
+        <li><a class="headerBar__link" href="../buttons">Buttons</a></li>
+        <li><a class="headerBar__link headerBar__link--active" href="#">Calculator</a></li>
+    </ul>
+</div>
+
+<div class="mainArea mainArea--calc">
+    <div class="tiltedBody">
+        <div class="tiltedBody__inner">
+            <div class="app">
+                <ul class="numberList js-num-list"></ul>
+                <div class="sumBox js-sum-box">0</div>
+                <div class="plusBox">
+                    <p class="plusBox__inner">+</p>
+                </div>
+            </div>
+            <div class="inputTray">
+                <input type="text" class="inputTray__input js-num" />
+                <button type="button" class="btn js-add-btn"><p class="btn__inner"></p>Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footerBar">Demo project for spring 2020 semester JS class at ReDI Munich</div>
+<script src="../main.js"></script>
+<script src="calc.js"></script>
+</body>
+</html>

@@ -4,46 +4,39 @@
 <head>
     <meta charset="utf-8">
     <title>Redi JS Project</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
     <link rel="icon" href="img/redi.png">
 </head>
-
 <body>
-<div class="header-bar">
-    <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="#">Final project</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)">Course projects</a>
-            <div class="dropdown-content">
-                <a href="html/buttons-on-click.html">Buttons</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </li>
+<div class="headerBar">
+    <ul class="headerBar__links">
+        <li><a class="headerBar__link headerBar__link--active" href="/">Home</a></li>
+        <li><a class="headerBar__link" href="buttons">Buttons</a></li>
+        <li><a class="headerBar__link" href="calculator">Calculator</a></li>
     </ul>
 </div>
 
-<div class="main-area">
-    <div class="home-content-block">
+<div class="mainArea mainArea--homepage">
+    <div class="homeContent">
         <a href="https://www.redi-school.org/redimunich" target="_blank">
-            <img src="img/we-are-redi.jpg" alt="we are redi picture">
+            <img class="homeContent__image" src="img/we-are-redi.jpg" alt="we are redi picture">
         </a>
     </div>
-    <div class="home-content-banner">
-        <h2>IMPORTANT INFORMATION</h2>
-        <p>Classes are held on Monday and Thursday from 7pm till 9pm at Online Session (Classroom) Teams channel</p>
+    <div class="homeBanner__wrapper">
+        <div class="homeBanner">
+            <h2 class="homeBanner__title">IMPORTANT INFORMATION</h2>
+            <p>Classes are held on Monday and Thursday from 7pm till 9pm at Online Session (Classroom) Teams channel</p>
+        </div>
     </div>
-    <div class="home-content-block">
+    <div class="homeContent">
         <a href="https://github.com/test-redi-js1/redi_js_spring_2020" target="_blank">
-            <img src="img/fe-code-camp.jpg" alt="demo project">
+            <img class="homeContent__image" src="img/fe-code-camp.jpg" alt="demo project">
         </a>
     </div>
 </div>
 
-<div class="footer-bar">
-    <span> Demo project for spring 2020 semester JS class at ReDI Munich </span>
-</div>
-<script src="js/main.js"></script>
+<div class="footerBar">Demo project for spring 2020 semester JS class at ReDI Munich</div>
+<script src="main.js"></script>
 </body>
 </html>
