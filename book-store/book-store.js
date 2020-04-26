@@ -1,6 +1,5 @@
 (() => {
-
-    let book_1 = {
+    const book_1 = {
         name: "Raising goats for dummies",
         price: 15,
         pageCount: 340,
@@ -14,7 +13,7 @@
         },
     };
 
-    let book_2 = {
+    const book_2 = {
         name: "HTML. The Definitive Guide",
         price: 12,
         pageCount: 128,
@@ -28,7 +27,7 @@
         },
     };
 
-    let book_3 = {
+    const book_3 = {
         name: "JavaScript: The Definitive Guide",
         price: 50,
         pageCount: 280,
@@ -42,7 +41,7 @@
         }
     };
 
-    let book_4 = {
+    const book_4 = {
         name: "Zombie Raccoons & Killer Bunnies",
         price: 20,
         pageCount: 460,
@@ -56,10 +55,10 @@
         },
     };
 
-    let bookList = document.querySelector('.book-list');
-    let books = [book_1, book_2, book_3, book_4];
+    const bookList = document.querySelector('.book-list');
+    const books = [book_1, book_2, book_3, book_4];
 
-    let getBookDescription = (rating) => {
+    const getBookDescription = (rating) => {
         let stars = "";
         for (let i = 0; i < rating; i++) {
             stars = stars + "⭐";
