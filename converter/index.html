@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Redi JS Project</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../img/redi.png">
+</head>
+
+<body>
+<div class="headerBar">
+    <ul class="headerBar__links">
+        <li><a class="headerBar__link" href="../">Home</a></li>
+        <li><a class="headerBar__link" href="../buttons">Buttons</a></li>
+        <li><a class="headerBar__link" href="../calculator">Calculator</a></li>
+        <li><a class="headerBar__link headerBar__link--active" href="#">Converter</a></li>
+    </ul>
+    <div class="filler"></div>
+    <div id="burgerButton" class="burger-btn">
+        <div class="burger-btn__line"></div>
+        <div class="burger-btn__line"></div>
+        <div class="burger-btn__line"></div>
+    </div>
+</div>
+
+<div class="mainArea">
+    <div class="content">
+        <input type="number" placeholder="Distance" id="distance">
+        <input type="number" placeholder="Time" id="time">
+        <button type="submit" id="calculate" class="btn">Calculate speed</button>
+        <div class="result"></div>
+    </div>
+
+    <script>
+        function createHtmlStructure(distance, time, speed) {
+            return `
+                <div>
+                    <div>Given data: distance=${distance}, time=${time}</div>
+                    <div>Speed of a car is: ${speed}km/h</div>
+                </div>
+            `;
+        }
+
+        function calculateSpeed(distance, time) {
+            return distance/time;
+        }
+
+        function getUserInput() {
+            const distance = document.getElementById('distance').value;
+            const time = document.getElementById('time').value;
+            const userInput = {
+                distance: distance,
+                time: time
+            };
+            return userInput;
+        }
+
+        function calculateClickHandler() {
+            const userInput = getUserInput();
+            const speed = calculateSpeed(userInput.distance, userInput.time);
+
+            document.querySelector('.result').innerHTML = createHtmlStructure(
+                userInput.distance, userInput.time, speed
+            )
+        }
+
+        document.getElementById('calculate').addEventListener('click', calculateClickHandler);
+    </script>
+</div>
+
+
+<div class="footerBar">Demo project for spring 2020 semester JS class at ReDI Munich</div>
+<script src="../js/main.js"></script>
+<script src="buttons.js"></script>
+</body>
+
+</html>
