@@ -50,10 +50,11 @@
         function getUserInput() {
             const distance = document.getElementById('distance').value;
             const time = document.getElementById('time').value;
-
-            return {
-                distance, time
+            const userInput = {
+                distance: distance,
+                time: time
             };
+            return userInput;
         }
 
         function calculateClickHandler() {
